@@ -1,0 +1,609 @@
+<html>
+  <head>
+    <title>HAR Financial Services Inc</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://inorganik.github.io/countUp.js/dist/countUp.umd.js"></script>
+  </head>
+  <body>
+    <section id="main" class="home_main">
+      <div class="nav">
+        <div class="nav_image_container"><img src="index_src_images/logo.svg" /></div>
+        <div class="nav_links">
+          <div class="nav_link" onclick="navigateTo('home')">Home</div>
+          <div class="nav_link" onclick="navigateTo('services')">Services</div>
+          <div class="nav_link" onclick="navigateTo('pricing')">Pricing</div>
+          <div class="nav_link" onclick="navigateTo('contact')">Contact</div>
+        </div>
+        <div class="nav_buttons">
+          <div id="beta_button" class="beta_button">Beta Access</div>
+          <div id="payroll_portal" class="payroll_portal">Payroll Portal</div>
+        </div>
+        <div class="hamburger">
+          <img src="hamburger.svg" class="hamburger_image" onclick="openDropdown()" />
+          <div id="dropdown" class="dropdown">
+            <div class="dropdown_entry" onclick="navigateTo('home')">Home</div>
+            <div class="dropdown_entry" onclick="navigateTo('services')">Services</div>
+            <div class="dropdown_entry" onclick="navigateTo('pricing')">Pricing</div>
+            <div class="dropdown_entry" onclick="navigateTo('contact')">Contact</div>
+            <div id="payroll_portal2" class="dropdown_entry_button">Payroll Portal</div>
+          </div>
+        </div>
+      </div>
+      <div id="home_main_body" class="home_main_body fade-in">
+        <div class="home_main_body_left">
+          <div class="main_moto">The all-in-one financial firm for all your needs.</div>
+          <div class="sub_moto">From payroll to bookkeeping to tax filing, the all in one support your business can count on.</div>
+          <div class="request_consultation_button" onclick="navigateTo('contact')">
+            Request a consultation <img src="index_src_images/arrow_right.svg" />
+          </div>
+          <div class="promos">
+            <div class="promo">
+              <div class="promo_check_container"><img src="index_src_images/black_check.svg" class="promo_image" /></div>
+              Payroll Free Trial
+            </div>
+            <div class="promo">
+              <div class="promo_check_container"><img src="index_src_images/black_check.svg" class="promo_image" /></div>
+              Flexible Pricing
+            </div>
+            <div class="promo">
+              <div class="promo_check_container"><img src="index_src_images/black_check.svg" class="promo_image" /></div>
+              Free Onboarding
+            </div>
+          </div>
+        </div>
+        <div class="main_image_container fade-slide-in"><img src="index_src_images/main_image.png" class="main_image_src" /></div>
+      </div>
+    </section>
+    <section id="why_choose_us" class="why_choose_us">
+      <div class="why_choose_us_top fade-in">
+        <div class="why_choose_us_top_left">
+          <div class="why_choose_us_text">Why Choose Us</div>
+          <div class="why_choose_us_header">Your business goals are our top priority</div>
+        </div>
+        <div class="why_choose_us_top_right fade-slide-in">
+          <div class="why_choose_us_top_nav">
+            <div
+              id="why_choose_us_top_nav_vision"
+              class="why_choose_us_top_nav_vision why_choose_us_nav_selected"
+              onclick="changeWhyChooseUsNav('vision')"
+            >
+              Our Vision
+            </div>
+            <div id="why_choose_us_top_nav_mission" class="why_choose_us_top_nav_mission" onclick="changeWhyChooseUsNav('mission')">Our Mission</div>
+          </div>
+          <div id="why_choose_us_header_subheader_vision" class="why_choose_us_header_subheader">
+            Our vision is to be the leading accounting firm in Minneapolis, renowned for our dedication to empowering the East African community. We
+            strive to be a catalyst for financial success and economic growth, fostering an inclusive environment where individuals and businesses can
+            thrive.
+          </div>
+          <div id="why_choose_us_header_subheader_mission" class="why_choose_us_header_subheader">
+            Our mission is to empower the East African community in Minneapolis by providing exceptional accounting and financial services tailored to
+            their unique needs. We are dedicated to enhancing financial literacy, fostering economic stability, and supporting the entrepreneurial
+            spirit within this vibrant community.
+          </div>
+        </div>
+      </div>
+      <div class="why_choose_us_bottom">
+        <div class="why_choose_us_box fade-slide-in">
+          <div class="why_choose_us_box_image"><img src="index_src_images/calendar.svg" /></div>
+          <div class="why_choose_us_box_header"><span id="years_experience"> 15 </span> +</div>
+          <div class="why_choose_us_box_subheader">Years of industry experience</div>
+        </div>
+        <div class="why_choose_us_box fade-slide-in long_delay">
+          <div class="why_choose_us_box_image"><img src="index_src_images/business.svg" /></div>
+          <div class="why_choose_us_box_header"><span id="payroll_clients_number"> 200 </span> +</div>
+          <div class="why_choose_us_box_subheader">Active Payroll Clients</div>
+        </div>
+        <div class="why_choose_us_box fade-slide-in longer_delay">
+          <div class="why_choose_us_box_image"><img src="index_src_images/money.png" /></div>
+          <div class="why_choose_us_box_header"><span id="payroll_disbursed_number"> 100 </span> Million +</div>
+          <div class="why_choose_us_box_subheader">Payroll Disbursed Annually</div>
+        </div>
+        <div class="why_choose_us_box fade-slide-in even_longer_delay">
+          <div class="why_choose_us_box_image"><img src="index_src_images/taxes.svg" /></div>
+          <div class="why_choose_us_box_header"><span id="taxes_filed_number"> 1000 </span> +</div>
+          <div class="why_choose_us_box_subheader">
+            Business & Individual Taxes <br />
+            Filed Annually
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div id="services_nav" class="services_nav">
+        <div id="services_nav_link_payroll" class="services_nav_link fade-in" onclick="changeServiceToPayroll()">Payroll</div>
+        <div id="services_nav_link_bookkeeping" class="services_nav_link fade-in" onclick="changeServiceToBookkeeping()">
+          Bookkeeping
+          <div class="new_box">NEW</div>
+        </div>
+        <div id="services_nav_link_taxes" class="services_nav_link fade-in" onclick="changeServiceToTaxes()">Taxes</div>
+      </div>
+
+      <div id="service_one" class="service_one">
+        <div class="service_left fade-in">
+          <div class="service_payroll_tag">Payroll</div>
+          <div class="service_header">Pay employees quickly & reliably</div>
+          <div class="service_subheader">Crafting precise financial roadmaps aligned with your business objectives.</div>
+          <div class="service_checklist">
+            <div class="service_checklist_item">
+              <div class="blue_check_container"><img src="index_src_images/blue_check.svg" /></div>
+              Direct deposit or printed checks
+            </div>
+            <div class="service_checklist_item">
+              <div class="blue_check_container"><img src="index_src_images/blue_check.svg" /></div>
+              Employee self-service portal
+            </div>
+            <div class="service_checklist_item">
+              <div class="blue_check_container"><img src="index_src_images/blue_check.svg" /></div>
+              Advanced reporting and analytics
+            </div>
+          </div>
+          <div class="service_pricing" onclick="navigateTo('pricing-payroll')">See Pricing</div>
+        </div>
+        <div class="service_right fade-slide-in"><img src="index_src_images/payroll_image.png" class="service_image" /></div>
+      </div>
+
+      <div id="service_two" class="service">
+        <div class="service_right fade-slide-in"><img src="index_src_images/bookkeeping_image.png" class="service_image_mirror" /></div>
+        <div class="service_left fade-in">
+          <div class="service_bookkeeping_tag">Bookkeeping</div>
+          <div class="service_header">Accurate books delivered monthly</div>
+          <div class="service_subheader">Crafting precise financial roadmaps aligned with your business objectives.</div>
+          <div class="service_checklist">
+            <div class="service_checklist_item">
+              <div class="blue_check_container"><img src="index_src_images/blue_check.svg" /></div>
+              Financial statement preparation
+            </div>
+            <div class="service_checklist_item">
+              <div class="blue_check_container"><img src="index_src_images/blue_check.svg" /></div>
+              Accounts payable and receivable management
+            </div>
+            <div class="service_checklist_item">
+              <div class="blue_check_container"><img src="index_src_images/blue_check.svg" /></div>
+              Advanced tax preparation support
+            </div>
+          </div>
+          <div class="service_pricing" onclick="navigateTo('pricing-bookkeeping')">See Pricing</div>
+        </div>
+      </div>
+
+      <div id="service_three" class="service">
+        <div class="service_left fade-in">
+          <div class="service_taxes_tag">Taxes</div>
+          <div class="service_header">Tax filing for individuals and businesses</div>
+          <div class="service_subheader">Crafting precise financial roadmaps aligned with your business objectives.</div>
+          <div class="service_checklist">
+            <div class="service_checklist_item">
+              <div class="blue_check_container"><img src="index_src_images/blue_check.svg" /></div>
+              Federal and state tax compliance
+            </div>
+            <div class="service_checklist_item">
+              <div class="blue_check_container"><img src="index_src_images/blue_check.svg" /></div>
+              Strategic tax planning and optimization
+            </div>
+            <div class="service_checklist_item">
+              <div class="blue_check_container"><img src="index_src_images/blue_check.svg" /></div>
+              IRS audit support and representation
+            </div>
+          </div>
+          <div class="service_pricing" onclick="navigateTo('pricing-taxes')">See Pricing</div>
+        </div>
+        <div class="service_right fade-slide-in"><img src="index_src_images/taxes_image.png" class="service_image" /></div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+      <div class="testimonials_top fade-in">
+        <div class="testimonials_top_left">
+          <div class="testimonials_tag">Client Testimonials</div>
+          <div class="testimonials_header">Join our growing community</div>
+        </div>
+        <div class="testimonials_top_right">
+          <div class="testimonials_subheader">
+            Discover how our financial expertise transformed businesses like yours, delivering exceptional results and growth.
+          </div>
+          <div class="testimonials_contact_us_button" onclick="navigateTo('contact')">
+            Contact us <img src="index_src_images/white_right_arrow.png" />
+          </div>
+        </div>
+      </div>
+      <div class="testimonials_bottom">
+        <div class="testimony_box fade-slide-in">
+          <div class="review_stars"><img src="index_src_images/five_stars.png" /></div>
+          <div class="review_text">Helped navigate regulatory challenges. Valued advisors for strategic financial decisions.</div>
+          <div class="reviewer_name">Hudeyfa Farah</div>
+          <div class="reivewer_company">Elite Services Inc</div>
+          <div class="review_service">Payroll & Bookkeeping Client</div>
+        </div>
+        <div class="testimony_box fade-slide-in long_delay">
+          <div class="review_stars"><img src="index_src_images/five_stars.png" /></div>
+          <div class="review_text">Helped navigate regulatory challenges. Valued advisors for strategic financial decisions.</div>
+          <div class="reviewer_name">Hudeyfa Farah</div>
+          <div class="reivewer_company">Elite Services Inc</div>
+          <div class="review_service">Payroll & Bookkeeping Client</div>
+        </div>
+        <div class="testimony_box fade-slide-in longer_delay">
+          <div class="review_stars"><img src="index_src_images/five_stars.png" /></div>
+          <div class="review_text">Helped navigate regulatory challenges. Valued advisors for strategic financial decisions.</div>
+          <div class="reviewer_name">Hudeyfa Farah</div>
+          <div class="reivewer_company">Elite Services Inc</div>
+          <div class="review_service">Payroll & Bookkeeping Client</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+      <div class="pricing_tag fade-in">Pricing</div>
+      <div class="pricing_header fade-in">Flexible pricing tailored to your financial needs</div>
+      <div class="pricing_subheader fade-in">
+        We believe in transparency, value, and empowering our clients to achieve their financial goals with personalized and competitive pricing
+        options
+      </div>
+      <div class="pricing_section_nav fade-in">
+        <div id="pricing_section_nav_payroll" class="pricing_section_nav_element active_pricing_section_nav" onclick="changePricingNav('payroll')">
+          Payroll
+        </div>
+        <div id="pricing_section_nav_bookkeeping" class="pricing_section_nav_element" onclick="changePricingNav('bookkeeping')">Bookkeeping</div>
+        <div id="pricing_section_nav_taxes" class="pricing_section_nav_element" onclick="changePricingNav('taxes')">Taxes</div>
+      </div>
+      <div class="service_pricing_boxes">
+        <div id="payroll_starter_pricing" class="payroll_starter_pricing fade-slide-in">
+          <div class="pricing_amount"><span class="pricing_dollar_sign">$</span> 200+ <span class="pricing_small_text">/Month</span></div>
+          <div class="box_header">Starter Package</div>
+          <div class="box_body">Get started with all the essential payroll features you need to run your business smoothly and efficiently</div>
+          <div class="package_checklist">
+            <div class="checklist_element"><img src="index_src_images/checklist_image.svg" /> Online portal to pay employees & contractors</div>
+            <div class="checklist_element"><img src="index_src_images/checklist_image.svg" /> Tax filing and compliance</div>
+            <div class="checklist_element"><img src="index_src_images/checklist_image.svg" /> Direct deposit</div>
+            <div class="checklist_element"><img src="index_src_images/checklist_image.svg" /> Detailed reports for financial analysis</div>
+          </div>
+          <div class="service_get_started_button" onclick="navigateTo('contact')">Get Started</div>
+        </div>
+        <div id="payroll_starter_pricing2" class="payroll_starter_pricing fade-slide-in">
+          <div class="pricing_amount">Custom Pricing</div>
+          <div class="box_header">Essential Package</div>
+          <div class="box_body">Streamline your payroll process with advanced features and reporting.</div>
+          <div class="package_checklist_header">Everything in Starter Package, plus:</div>
+          <div class="package_checklist">
+            <div class="checklist_element"><img src="index_src_images/checklist_image.svg" /> Next day direct deposit</div>
+            <div class="checklist_element"><img src="index_src_images/checklist_image.svg" /> Employee self-service</div>
+            <div class="checklist_element"><img src="index_src_images/checklist_image.svg" /> ACA reporting</div>
+            <div class="checklist_element"><img src="index_src_images/checklist_image.svg" /> Priority phone and email support</div>
+          </div>
+          <div class="service_get_started_button" onclick="navigateTo('contact')">Get Started</div>
+        </div>
+
+        <div id="bookkeeping_starter_pricing" class="payroll_starter_pricing fade-slide-in">
+          <div class="pricing_amount"><span class="pricing_dollar_sign">$</span> 249+ <span class="pricing_small_text">/Month</span></div>
+          <div class="box_header">Starter Package</div>
+          <div class="box_body">Our starter bookkeeping package provides bookkeeping services at an affordable price for small businesses.</div>
+          <div class="package_checklist">
+            <div class="checklist_element"><img src="index_src_images/checklist_image.svg" /> Monthly financial statement preparation</div>
+            <div class="checklist_element"><img src="index_src_images/checklist_image.svg" /> Bank and credit card account reconciliation</div>
+            <div class="checklist_element"><img src="index_src_images/checklist_image.svg" /> Basic tax preparation support</div>
+            <div class="checklist_element"><img src="index_src_images/checklist_image.svg" /> Custom GL accounts</div>
+          </div>
+          <div class="service_get_started_button" onclick="navigateTo('contact')">Get Started</div>
+        </div>
+        <div id="bookkeeping_starter_pricing2" class="payroll_starter_pricing fade-slide-in">
+          <div class="pricing_amount">Custom Pricing</div>
+          <div class="box_header">Essential Package</div>
+          <div class="box_body">
+            Optimize your operations with our advanced bookkeeping package, tailored to meet the needs of medium to large enterprises.
+          </div>
+          <div class="package_checklist_header">Everything in Starter Package, plus:</div>
+          <div class="package_checklist">
+            <div class="checklist_element"><img src="index_src_images/checklist_image.svg" /> Future planning and budgeting</div>
+            <div class="checklist_element"><img src="index_src_images/checklist_image.svg" /> Advanced tax preparation support</div>
+            <div class="checklist_element"><img src="index_src_images/checklist_image.svg" /> Accounts Payable and Receivable Management</div>
+          </div>
+          <div class="service_get_started_button" onclick="navigateTo('contact')">Get Started</div>
+        </div>
+
+        <div id="taxes_starter_pricing" class="payroll_starter_pricing fade-slide-in">
+          <div class="pricing_amount"><span class="pricing_dollar_sign">$</span> 600+ <span class="pricing_small_text">/Year</span></div>
+          <div class="box_header">Starter Package</div>
+          <div class="box_body">
+            Our essential small business tax package, designed to meet the unique needs of entrepreneurs and small businesses.
+          </div>
+          <div class="package_checklist">
+            <div class="checklist_element"><img src="index_src_images/checklist_image.svg" /> Full-service business tax preparation and filing</div>
+            <div class="checklist_element"><img src="index_src_images/checklist_image.svg" /> Federal, state, and local tax compliance</div>
+            <div class="checklist_element"><img src="index_src_images/checklist_image.svg" /> Tax credits and deductions optimization</div>
+          </div>
+          <div class="service_get_started_button" onclick="navigateTo('contact')">Get Started</div>
+        </div>
+        <div id="taxes_starter_pricing2" class="payroll_starter_pricing fade-slide-in">
+          <div class="pricing_amount">Custom Pricing</div>
+          <div class="box_header">Essential Package</div>
+          <div class="box_body">Expert business tax services, tailored for the needs of medium to large enterprises.</div>
+          <div class="package_checklist_header">Everything in Starter Package, plus:</div>
+          <div class="package_checklist">
+            <div class="checklist_element"><img src="index_src_images/checklist_image.svg" /> Dedicated tax advisor</div>
+            <div class="checklist_element"><img src="index_src_images/checklist_image.svg" /> Audit support and representation</div>
+            <div class="checklist_element"><img src="index_src_images/checklist_image.svg" /> Strategic tax planning and optimization</div>
+            <div class="checklist_element"><img src="index_src_images/checklist_image.svg" /> Priority phone and email support</div>
+          </div>
+          <div class="service_get_started_button" onclick="navigateTo('contact')">Get Started</div>
+        </div>
+      </div>
+    </section>
+    <section class="founder_quote_section">
+      <div class="founder_quote_header fade-in">CEO and Founder since 2006</div>
+      <div class="founders_quote fade-in">Our commitment to integrity, clarity, and client satisfaction is what defines us.</div>
+      <div class="founders_quote_subheader fade-in">
+        I believe in the transformative power of financial clarity. In every balance sheet, we discover opportunities for growth, and in every audit,
+        we build trust. Our commitment to precision, integrity, and client success defines who we are.
+      </div>
+      <div class="founder_signature fade-in"><img src="index_src_images/signature.png" /></div>
+    </section>
+
+    <section id="contact_us" class="contact_us">
+      <div class="contact_us_left">
+        <div class="contact_us_tag fade-in">Connect</div>
+        <div class="contact_us_header fade-in">Get in touch today</div>
+        <div class="contact_us_subheader fade-in">Reach out to us for assistance and start your financial journey</div>
+        <div class="boxes">
+          <div class="contact_us_address_box fade-in">
+            <div class="contact_us_address_box_header">Address:</div>
+            <div class="contact_us_address_box_body">2219 Oakland Ave STE 106 Minneapolis, MN 55404</div>
+          </div>
+          <div class="contact_us_contact_box fade-in">
+            <div class="contact_us_contact_box_header">Contacts:</div>
+            <div class="contact_us_contact_box_body">Email: info@haraccounting Phone: (612) 314-2048</div>
+          </div>
+        </div>
+      </div>
+      <div class="contact_us_right fade-slide-in">
+        <div class="get_in_touch">GET IN TOUCH</div>
+        <div class="contact_us_right_header">Let's get started</div>
+        <form action="https://submit-form.com/0JPwXNkGI" class="form_element">
+          <div class="input_row">
+            <input type="text" class="contact_input" name="Person Name" placeholder="Your name *" required />
+            <input type="text" class="contact_input" name="Company Name" placeholder="Company name" />
+          </div>
+          <div class="input_row">
+            <input type="tel" class="contact_input" name="Phone Number" placeholder="Phone number *" required />
+            <input type="email" class="contact_input" name="Email Address" placeholder="Email address" required />
+          </div>
+          <textarea class="extra_info" name="Extra Info" placeholder="What can we help you with?"></textarea>
+          <div class="waittime_note">Our support team will be in contact within 3 business days</div>
+          <input type="submit" class="submit_contact_button" value="Submit" />
+        </form>
+      </div>
+    </section>
+
+    <section id="footer" class="footer fade-in">
+      <div class="footer_element_one">
+        <div class="footer_logo"><img src="index_src_images/footer_logo.png" /></div>
+        <div class="footer_text">Our primary goal is to empower small business owners, agencies, and freelancers with maximum creative freedom.</div>
+        <div class="footer_copyright">
+          <img src="index_src_images/copyright.svg" /> Copyright 2024 HAR Financial Services Inc. All Rights Reserved
+        </div>
+      </div>
+      <div class="footer_element_two">
+        <div class="footer_element_header">Page Links</div>
+        <div class="footer_nav_extra">
+          <div class="footer_page_link" onclick="navigateTo('home')">Home</div>
+          <div class="footer_page_link" onclick="navigateTo('services')">Services</div>
+          <div class="footer_page_link" onclick="navigateTo('pricing')">Pricing</div>
+          <div class="footer_page_link" onclick="navigateTo('contact')">Contact us</div>
+        </div>
+      </div>
+      <div class="footer_element_three">
+        <div class="footer_element_header">Services</div>
+        <div class="footer_page_service">Payroll</div>
+        <div class="footer_page_service">Bookkeeping</div>
+        <div class="footer_page_service">Individual Taxes</div>
+        <div class="footer_page_service">Business Taxes</div>
+      </div>
+      <div class="footer_element_four">
+        <div class="footer_element_header">Business Hours</div>
+        <div class="weekdays">
+          Weekdays
+          <div class="footer_business_hours">10:00 AM - 05:00 PM</div>
+        </div>
+        <div class="weekend">
+          Weekends
+          <div class="footer_business_hours">Closed</div>
+        </div>
+      </div>
+      <div class="footer_copyright_two">
+        <img src="index_src_images/copyright.svg" /> Copyright 2024 HAR Financial Services Inc. All Rights Reserved
+      </div>
+    </section>
+    <script>
+      function openDropdown() {
+        let dropdown = document.getElementById("dropdown");
+        let styles = window.getComputedStyle(dropdown);
+        if (styles.display === "none") {
+          dropdown.style.display = "block";
+        } else {
+          dropdown.style.display = "none";
+        }
+      }
+
+      function closeDropdown() {
+        document.getElementById("dropdown").style.display = "none";
+      }
+
+      window.addEventListener("click", function (event) {
+        let dropdown = document.getElementById("dropdown");
+        let hamburger = document.querySelector(".hamburger_image");
+
+        // Check if the clicked target is not the dropdown or the hamburger image
+        if (!dropdown.contains(event.target) && event.target !== hamburger) {
+          closeDropdown();
+        }
+      });
+
+      function navigateTo(e) {
+        closeDropdown();
+        if (e === "home") {
+          document.getElementById("main").scrollIntoView({
+            behavior: "smooth",
+          });
+        } else if (e === "services") {
+          document.getElementById("services").scrollIntoView({
+            behavior: "smooth",
+          });
+        } else if (e.includes("pricing")) {
+          let parts = e.split("-");
+          changePricingNav(parts[1]);
+          document.getElementById("pricing").scrollIntoView({
+            behavior: "smooth",
+          });
+        } else if (e === "contact") {
+          document.getElementById("contact_us").scrollIntoView({
+            behavior: "smooth",
+          });
+        }
+      }
+
+      function changePricingNav(e) {
+        if (e === "payroll") {
+          document.getElementById("payroll_starter_pricing").classList.add("fade_in_bottom");
+          document.getElementById("payroll_starter_pricing2").classList.add("fade_in_bottom");
+          document.getElementById("pricing_section_nav_payroll").classList.add("active_pricing_section_nav");
+          document.getElementById("pricing_section_nav_bookkeeping").classList.remove("active_pricing_section_nav");
+          document.getElementById("pricing_section_nav_taxes").classList.remove("active_pricing_section_nav");
+          document.getElementById("taxes_starter_pricing").style.display = "none";
+          document.getElementById("taxes_starter_pricing2").style.display = "none";
+          document.getElementById("bookkeeping_starter_pricing").style.display = "none";
+          document.getElementById("bookkeeping_starter_pricing2").style.display = "none";
+          document.getElementById("payroll_starter_pricing").style.display = "flex";
+          document.getElementById("payroll_starter_pricing2").style.display = "flex";
+        } else if (e === "bookkeeping") {
+          document.getElementById("bookkeeping_starter_pricing").classList.add("fade_in_bottom");
+          document.getElementById("bookkeeping_starter_pricing2").classList.add("fade_in_bottom");
+          document.getElementById("pricing_section_nav_payroll").classList.remove("active_pricing_section_nav");
+          document.getElementById("pricing_section_nav_bookkeeping").classList.add("active_pricing_section_nav");
+          document.getElementById("pricing_section_nav_taxes").classList.remove("active_pricing_section_nav");
+          document.getElementById("taxes_starter_pricing").style.display = "none";
+          document.getElementById("taxes_starter_pricing2").style.display = "none";
+          document.getElementById("payroll_starter_pricing").style.display = "none";
+          document.getElementById("payroll_starter_pricing2").style.display = "none";
+          document.getElementById("bookkeeping_starter_pricing").style.display = "flex";
+          document.getElementById("bookkeeping_starter_pricing2").style.display = "flex";
+        } else if (e === "taxes") {
+          document.getElementById("taxes_starter_pricing").classList.add("fade_in_bottom");
+          document.getElementById("taxes_starter_pricing2").classList.add("fade_in_bottom");
+          document.getElementById("pricing_section_nav_payroll").classList.remove("active_pricing_section_nav");
+          document.getElementById("pricing_section_nav_bookkeeping").classList.remove("active_pricing_section_nav");
+          document.getElementById("pricing_section_nav_taxes").classList.add("active_pricing_section_nav");
+          document.getElementById("payroll_starter_pricing").style.display = "none";
+          document.getElementById("payroll_starter_pricing2").style.display = "none";
+          document.getElementById("bookkeeping_starter_pricing").style.display = "none";
+          document.getElementById("bookkeeping_starter_pricing2").style.display = "none";
+          document.getElementById("taxes_starter_pricing").style.display = "flex";
+          document.getElementById("taxes_starter_pricing2").style.display = "flex";
+        }
+      }
+
+      function changeWhyChooseUsNav(e) {
+        if (e === "vision") {
+          document.getElementById("why_choose_us_top_nav_mission").classList.remove("why_choose_us_nav_selected");
+          document.getElementById("why_choose_us_top_nav_vision").classList.add("why_choose_us_nav_selected");
+          document.getElementById("why_choose_us_header_subheader_vision").style.display = "block";
+          document.getElementById("why_choose_us_header_subheader_mission").style.display = "none";
+        } else if (e === "mission") {
+          document.getElementById("why_choose_us_top_nav_vision").classList.remove("why_choose_us_nav_selected");
+          document.getElementById("why_choose_us_top_nav_mission").classList.add("why_choose_us_nav_selected");
+          document.getElementById("why_choose_us_header_subheader_vision").style.display = "none";
+          document.getElementById("why_choose_us_header_subheader_mission").style.display = "block";
+        }
+      }
+
+      function changeServiceToPayroll() {
+        document.getElementById("services_nav_link_taxes").classList.remove("active_service_link");
+        document.getElementById("services_nav_link_bookkeeping").classList.remove("active_service_link");
+        document.getElementById("services_nav_link_payroll").classList.add("active_service_link");
+        document.getElementById("service_one").scrollIntoView({
+          behavior: "smooth",
+        });
+      }
+
+      function changeServiceToBookkeeping() {
+        document.getElementById("services_nav_link_taxes").classList.remove("active_service_link");
+        document.getElementById("services_nav_link_bookkeeping").classList.add("active_service_link");
+        document.getElementById("services_nav_link_payroll").classList.remove("active_service_link");
+        document.getElementById("service_two").scrollIntoView({
+          behavior: "smooth",
+        });
+      }
+
+      function changeServiceToTaxes() {
+        document.getElementById("services_nav_link_taxes").classList.add("active_service_link");
+        document.getElementById("services_nav_link_bookkeeping").classList.remove("active_service_link");
+        document.getElementById("services_nav_link_payroll").classList.remove("active_service_link");
+        document.getElementById("service_three").scrollIntoView({
+          behavior: "smooth",
+        });
+      }
+
+      function handleIntersection(entries, observer) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible"); // Add the 'visible' class for both fade-in and fade-slide-in effects
+            observer.unobserve(entry.target); // Stop observing once the element is visible
+          }
+        });
+      }
+
+      // Create an intersection observer instance
+      const observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
+
+      // Get all elements with the specified class name
+      const fadeElementsFadeIn = document.querySelectorAll(".fade-in");
+      const fadeElementsSlideIn = document.querySelectorAll(".fade-slide-in");
+
+      // Start observing each element
+      fadeElementsFadeIn.forEach((element) => {
+        observer.observe(element);
+      });
+
+      fadeElementsSlideIn.forEach((element) => {
+        observer.observe(element);
+      });
+
+      let element = document.getElementById("payroll_portal");
+      let element2 = document.getElementById("payroll_portal2");
+      element.addEventListener("click", function () {
+        window.location.href = "https://secure.netlinksolution.com/nextgen/#/home/dashboard";
+      });
+      element2.addEventListener("click", function () {
+        window.location.href = "https://secure.netlinksolution.com/nextgen/#/home/dashboard";
+      });
+
+      let CountUpOptions = {
+        startVal: 1,
+        duration: 4, // animation duration in seconds (2)
+        enableScrollSpy: true, // start animation when target is in view
+        scrollSpyDelay: 0, // delay (ms) after target comes into view
+        scrollSpyOnce: true, // run only once
+        useEasing: true,
+      };
+
+      let CountUpOptions2 = {
+        startVal: 1,
+        duration: 3, // animation duration in seconds (2)
+        enableScrollSpy: true, // start animation when target is in view
+        scrollSpyDelay: 0, // delay (ms) after target comes into view
+        scrollSpyOnce: true, // run only once
+      };
+
+      new countUp.CountUp("years_experience", 15, CountUpOptions);
+      new countUp.CountUp("payroll_clients_number", 200, CountUpOptions);
+      new countUp.CountUp("payroll_disbursed_number", 100, CountUpOptions);
+      new countUp.CountUp("taxes_filed_number", 1000, CountUpOptions2);
+    </script>
+  </body>
+</html>
