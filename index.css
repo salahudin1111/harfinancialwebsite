@@ -1,6 +1,6 @@
 html {
   font-family: "DM Sans", sans-serif;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   padding: 0px;
   margin: 0px;
@@ -8,7 +8,7 @@ html {
 
 body {
   background-color: #fdfdfd;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   padding: 0px;
   margin: 0px;
@@ -1730,5 +1730,94 @@ body {
   }
   .hamburger {
     display: block;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .main_moto {
+    font-size: 56px;
+  }
+  .why_choose_us_header {
+    font-size: 48px;
+  }
+  #why_choose_us_header_subheader_vision,
+  #why_choose_us_header_subheader_mission {
+    width: 380px;
+  }
+  .service_header {
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .service_checklist_item {
+    gap: 10px;
+    font-size: 16px;
+  }
+  .testimonials_subheader {
+    width: 380px;
+  }
+  .testimony_box {
+    display: flex;
+    align-items: center;
+    width: 380px;
+  }
+  .review_text {
+    font-size: 19px;
+    text-align: center;
+    margin-left: 0px;
+  }
+  .reviewer_name,
+  .reivewer_company,
+  .review_service,
+  .review_stars {
+    margin-left: 0px;
+  }
+  .review_service {
+    margin-right: 0px;
+  }
+  .pricing_header {
+    font-size: 42px;
+    width: 390px;
+  }
+  .pricing_subheader {
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+    width: 390px;
+  }
+  .pricing_section_nav_element {
+    width: 120px;
+  }
+  .founder_quote_section {
+    height: 650px;
+  }
+  .founders_quote {
+    font-size: 38px;
+    line-height: 48px;
+  }
+  .founders_quote_subheader {
+    width: 360px;
+  }
+  .contact_us_header {
+    font-size: 46px;
+  }
+  .contact_us_subheader {
+    width: 380px;
+  }
+  .contact_us_address_box,
+  .contact_us_contact_box {
+    width: 390px;
+  }
+  .contact_input,
+  .submit_contact_button,
+  .extra_info {
+    width: 360px;
+  }
+  .waittime_note {
+    width: 380px;
+    text-align: center;
+  }
+  .footer_copyright_two {
+    width: 380px;
+    align-items: flex-start;
   }
 }
