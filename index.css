@@ -612,7 +612,7 @@ body {
   justify-content: center;
   gap: 90px;
   width: 100%;
-  height: 740px;
+  height: 900px;
   background-color: rgba(102, 102, 102, 0.15);
   margin-top: 80px;
 }
@@ -698,8 +698,8 @@ body {
 .testimony_box {
   display: flex;
   flex-direction: column;
-  width: 382px;
-  height: 345px;
+  width: 420px;
+  height: 520px;
   background: #fff;
 }
 
@@ -993,11 +993,11 @@ body {
 
 .review_text {
   color: #000;
-  font-size: 21px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 30px; /* 142.857% */
   letter-spacing: -0.21px;
-  width: 301px;
+  width: 351px;
   margin-top: 18px;
 }
 
@@ -1007,7 +1007,7 @@ body {
   font-weight: 500;
   line-height: 30px; /* 142.857% */
   letter-spacing: -0.21px;
-  margin-top: 40px;
+  margin-top: auto;
 }
 
 .reivewer_company {
@@ -1026,8 +1026,9 @@ body {
   padding-top: 20px;
   margin-right: 48px;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
-  margin-top: 33px;
+  margin-top: 15px;
   text-indent: 3px;
+  margin-bottom: 30px;
 }
 
 .contact_us {
@@ -1463,7 +1464,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1350px) {
   .why_choose_us {
     height: 900px;
   }
@@ -1503,7 +1504,7 @@ body {
   }
   .testimonials {
     gap: 40px;
-    height: 800px;
+    height: 2300px;
   }
   .testimonials_top {
     flex-direction: column;
@@ -1519,12 +1520,9 @@ body {
     flex-direction: column;
     gap: 25px;
   }
-}
-
-@media screen and (max-width: 1225px) {
   .testimonials {
     gap: 60px;
-    height: 1600px;
+    height: 2100px;
   }
   .testimonials_bottom {
     flex-direction: column;
@@ -1532,6 +1530,9 @@ body {
   .service_pricing_boxes {
     gap: 30px;
   }
+}
+
+@media screen and (max-width: 1348px) {
 }
 
 @media screen and (max-width: 705px) {
