@@ -585,9 +585,12 @@
       fadeElementsSlideIn.forEach((element) => {
         observer.observe(element);
       });
-
+      let beta_button = document.getElementById("beta_button");
       let element = document.getElementById("payroll_portal");
       let element2 = document.getElementById("payroll_portal2");
+      beta_button.addEventListener("click", function () {
+        window.location.href = "https://harpay-client-react.onrender.com";
+      });
       element.addEventListener("click", function () {
         window.location.href = "https://secure.netlinksolution.com/nextgen/#/home/dashboard";
       });
