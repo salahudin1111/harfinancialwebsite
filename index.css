@@ -1735,7 +1735,8 @@ body {
 
 @media screen and (max-width: 1300px) {
   .main_moto {
-    font-size: 56px;
+    font-size: 62px;
+    line-height: 55px;
   }
   .why_choose_us_header {
     font-size: 48px;
